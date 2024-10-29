@@ -130,6 +130,7 @@ form{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 24px;
 
 }
 input, textarea{
@@ -164,4 +165,67 @@ font-size: 32px
     font-size: 16px;
     padding: 0 0 8px 0;
     font-weight: bold;
+}
+
+/* MAKE WEBPAGE RESPONSIVE ON SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
+/*MEDIA QUIRES*/
+@media(max-width: 728px){
+.row{
+  flex-direction: column;
+}
+/* IN INSPECT ELEMENT U CAN CLICK ON ANY CODE TO BRING UP THE STYLE.CSS U CAN WRITE CODE IN THERE TO SEE THE CHANGES ON THE PAGE AND IT DOESNT EFFECT YOUR CODE OR SAVE IT*/ 
+.home-description{
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*TRY TO USE SAME DESCRIPTIVE WORDS ON CLASS ELEMENTS TO MAKE IT EASIER TO STYLE */
+.home--description--button{
+  max-width: 240px;
+
+}
+h1{
+  text-align: center;
+  font-size: 60px;
+}
+.subheader{
+  text-align: center;
+  font-size: 28px;
+}
+ul{
+  display: none;
+}
+.section__description{
+  flex-direction: column;
+}
+
+.section__description{
+  flex-direction: column;
+  
+}
+.section__description--wrapper{
+  width: 100%;
+}
+.about__img--wrapper{
+width: 100%;
+}
+/*swaps image from top to bottom*/
+#discord .section__description{
+  flex-direction: column-reverse;
+}
+footer{
+  padding: 48px 24p;
+}
+/*NEVER HARD CODE WIDTH OR ANYTHING ALWAYS USE % VALUES IF U NEED TO HARDCODE SOMETHING USE MAX-WIDTH INSTEAD*/
+.footer__logo{
+  max-width: 360px;
+}
+.footer__link{
+  padding: 0 4px;
+  font-size: 18px;
+}
+.footer__links{
+  margin-bottom: 24px;
+}
 }
